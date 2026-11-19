@@ -6,3 +6,14 @@
 *.yy text eol=lf
 *.yyp text eol=lf
 *.json text eol=lf
+
+# Detección de lenguaje GML
+*.gml linguist-language=GML
+
+# Proteger archivos multimedia como binarios
+*.png binary
+*.jpg binary
+*.wav binary
+*.ogg binary
+*.mp3 binary
+*.ttf binary

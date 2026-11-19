@@ -60,3 +60,22 @@ Temporary Items
 
 # GMRT build directory
 Build
+
+# Compilaciones y ejecutables
+*.exe
+*.zip
+*.rar
+*.7z
+*.app
+*.dmg
+*.apk
+*.aab
+*.ipa
+
+# Caché y respaldos locales
+cache/
+tmp/
+logs/
+*.gm_backup
+*.yyp.bak
+*.user
