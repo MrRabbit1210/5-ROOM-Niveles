@@ -1,13 +1,21 @@
 {
   "FolderOrderSettings":[
+    {"name":"Font","order":1,"path":"folders/Font.yy",},
+    {"name":"Scripts","order":2,"path":"folders/Scripts.yy",},
     {"name":"Turn Based Battle","order":17,"path":"folders/Sprites/Turn Based Battle.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"FontDialogue","order":1,"path":"fonts/FontDialogue/FontDialogue.yy",},
+    {"name":"obj_dialog","order":2,"path":"objects/obj_dialog/obj_dialog.yy",},
+    {"name":"obj_enemy2","order":1,"path":"objects/obj_enemy2/obj_enemy2.yy",},
+    {"name":"obj_npc_parent","order":3,"path":"objects/obj_npc_parent/obj_npc_parent.yy",},
+    {"name":"obj_npc1","order":4,"path":"objects/obj_npc1/obj_npc1.yy",},
     {"name":"spr_box","order":8,"path":"sprites/spr_box/spr_box.yy",},
     {"name":"spr_enemy1","order":5,"path":"sprites/spr_enemy1/spr_enemy1.yy",},
     {"name":"spr_enemy2","order":4,"path":"sprites/spr_enemy2/spr_enemy2.yy",},
     {"name":"spr_fondo1","order":18,"path":"sprites/spr_fondo1/spr_fondo1.yy",},
     {"name":"spr_lava","order":15,"path":"sprites/spr_lava/spr_lava.yy",},
+    {"name":"spr_npc_fer","order":28,"path":"sprites/spr_npc_fer/spr_npc_fer.yy",},
     {"name":"spr_player_idle_down","order":6,"path":"sprites/spr_player_idle_down/spr_player_idle_down.yy",},
     {"name":"spr_player_idle_left","order":14,"path":"sprites/spr_player_idle_left/spr_player_idle_left.yy",},
     {"name":"spr_player_idle_right","order":7,"path":"sprites/spr_player_idle_right/spr_player_idle_right.yy",},
