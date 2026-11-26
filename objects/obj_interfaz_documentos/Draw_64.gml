@@ -1,4 +1,3 @@
-
 var ancho = display_get_gui_width();
 var alto = display_get_gui_height();
 
@@ -20,18 +19,12 @@ draw_set_font(fnt_documentos);
 
 draw_text(x1 + 30, y1 + 25, "Documentos de la familia Valerian");
 
-// =====================================
 // BOTON PARA CERRAR (X)
-// =====================================
-
 draw_set_color(c_white);
 draw_set_font(fnt_documentos);
 draw_text(x1 + panel_ancho - 45, y1 + 20, "X");
 
-// =====================================
 // DOCUMENTOS
-// =====================================
-
 if (documento_abierto == -1) {
 
     var espacio_ancho = 130;
@@ -43,7 +36,6 @@ if (documento_abierto == -1) {
 
     var escala = 4;
 
-    // Posicion de la seleccion de documentos
     var seleccion_inicio_x = x1 + panel_ancho * 0.73;
     var seleccion_inicio_y = y1 + 150;
 
@@ -137,6 +129,23 @@ if (documento_abierto == -1) {
         );
     }
 
+    // INSTRUCCIONES DE CONTROLES
+    draw_set_color(make_color_rgb(210, 180, 130));
+    draw_set_font(fnt_documentos);
+    draw_set_halign(fa_left);
+
+    draw_text(
+        inicio_x,
+        inicio_y + espacio_alto + 20,
+        "Clic izquierdo: arrastrar documentos"
+    );
+
+    draw_text(
+        inicio_x,
+        inicio_y + espacio_alto + 50,
+        "Clic derecho: leer documentos"
+    );
+
     // Cartel al pasar el mouse
     if (documento_hover != -1 && !arrastrando) {
 
@@ -202,10 +211,7 @@ if (documento_abierto == -1) {
     }
 }
 
-// =====================================
 // VISTA AMPLIADA DEL DOCUMENTO
-// =====================================
-
 if (documento_abierto != -1) {
 
     draw_set_alpha(1);
@@ -235,7 +241,7 @@ if (documento_abierto != -1) {
 
         case 1:
             titulo_documento = "El origen de la familia Valerian";
-            texto_documento = "La familia Valerian obtuvo su titulo nobiliario gracias a su influencia y riqueza. Con el paso de los años, construyeron un enorme castillo, convirtiendose en una de las familias mas poderosas de la region.";
+            texto_documento = "La familia Valerian obtuvo su titulo nobiliario gracias a su influencia y riqueza. Con el paso de los aÃ±os, construyeron un enorme castillo, convirtiendose en una de las familias mas poderosas de la region.";
             break;
 
         case 2:
@@ -271,3 +277,4 @@ if (documento_abierto != -1) {
 
 draw_set_alpha(1);
 draw_set_color(c_white);
+draw_set_halign(fa_left);

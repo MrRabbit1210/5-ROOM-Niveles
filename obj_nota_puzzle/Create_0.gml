@@ -1,1 +1,0 @@
-jugador_cerca = false;

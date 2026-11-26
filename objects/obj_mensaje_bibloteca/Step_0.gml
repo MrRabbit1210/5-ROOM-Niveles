@@ -6,10 +6,7 @@ if (esperar_soltar) {
     }
 
 } 
-else {
-
-    // Cerrar mensaje al presionar E nuevamente
-    if (keyboard_check_pressed(ord("E"))) {
+// Cerrar mensaje al presionar E nuevamente
+else if (keyboard_check_pressed(ord("E"))) {
         instance_destroy();
-    }
 }

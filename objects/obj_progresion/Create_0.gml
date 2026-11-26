@@ -11,6 +11,8 @@ room2_completado = false;
 room3_completado = false;
 puzzle_criptas_completado = false;
 room4_completado = false;
+boss_valerian_activado = false;
+boss_valerian_derrotado = false;
 
 // Control de las puertas
 puertas_room1 = false;

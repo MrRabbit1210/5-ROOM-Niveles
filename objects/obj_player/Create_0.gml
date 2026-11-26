@@ -21,6 +21,9 @@ level = 1;
 xp = 0;
 xp_require = 100;
 
+//colisiones
+mask_index = spr_player_mask;
+
 function add_xp(_xp_to_add)
 {
     xp += _xp_to_add;
@@ -31,7 +34,7 @@ function add_xp(_xp_to_add)
         xp -= xp_require;
         xp_require *= 1.4;
 
-        hp_total += 5;
+        hp_total += 10;
         hp = hp_total;
         damage += 0.4;
     }

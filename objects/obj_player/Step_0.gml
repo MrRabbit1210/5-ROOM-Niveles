@@ -20,6 +20,13 @@ if (bloquear_movimiento) {
 var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var _ver = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
+var _dir = point_direction(0, 0, _hor, _ver);
+
+if (_hor != 0 || _ver != 0)
+{	
+	_hor = lengthdir_x(1, _dir);
+	_ver = lengthdir_y(1, _dir);
+}
 // Detectar las puertas que siguen cerradas
 var _puertas_cerradas = [];
 
@@ -37,16 +44,18 @@ var _colisiones = array_concat(
     _puertas_cerradas
 );
 
-// Movimiento normal
+// Movimiento horizontal
 move_and_collide(
     _hor * move_speed,
+    0,
+    _colisiones
+);
+
+// Movimiento vertical
+move_and_collide(
+    0,
     _ver * move_speed,
-    _colisiones,
-    undefined,
-    undefined,
-    undefined,
-    move_speed,
-    move_speed
+    _colisiones
 );
 
 // Animaciones y dirección
