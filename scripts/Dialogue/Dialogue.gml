@@ -7,10 +7,14 @@ function create_dialog(_messages){
 }
 
 char_colors = {
-	"Congrats": c_yellow,
+	"ROOM 1: EL PATIO": c_yellow,
+	"ROOM 2: LA BIBLIOTECA": c_yellow,
+	"ROOM 3: EL BANQUETE": c_yellow,
+	"ROOM 4: LA CRIPTA": c_yellow,
+	"ROOM 5: el secreto": c_yellow,
 	"Fer": c_red,
-	"Valen": c_purple,
-	"Maxi": c_blue
+	"Maxi": c_green,
+	"Valen": c_blue,
 }
 
 welcome_dialog = [
@@ -29,31 +33,51 @@ welcome_dialog = [
 ]
 maxi_dialog1 = [
 {
-	name: "Maxi",
-	msg: "Hola soy Maxi, y voy a contarte la introduccion de una manera totalmente casual y natural:"
+	name: "ROOM 1: EL PATIO",
+	msg: "Decisiones de diseño:"
 },
 {
-	name: "Maxi",
-	msg: "Hace siglos, un poderoso vampiro llamado Conde Valerian gobernaba desde su castillo. Su familia mantenía el control de la región mediante pactos y desapariciones misteriosas. Una noche, los habitantes del pueblo organizaron una rebelión para acabar con la familia matando a la secta pero sin embargo, nunca lograron encontrar al Conde Valerian del castillo."
+	name: "ROOM 1: EL PATIO",
+	msg: "Esta primera habitación funciona como introducción al desafío. El jugador llega al patio de la mansión y descubre que la entrada está protegida por criaturas vampíricas."
 },
 {
-	name: "Maxi",
-	msg: "Con el paso de los años, comenzaron a escucharse voces provenientes del castillo y algunos habitantes aseguran ver figuras observándonos desde las ventanas. Tu eres un cazador de mitos, encontraste información sobre la leyenda del conde y decidiste investigar el castillo para descubrir qué sucedió con sus antiguos habitantes."
+	name: "ROOM 1: EL PATIO",
+	msg: "Desde el punto de vista del gameplay, se busca introducir las mecánicas principales de combate: golpear (con click) y esquivar (espacio). Los enemigos funcionan como una primera barrera que impide avanzar directamente hacia el interior de la mansión."
+},
+{
+	name:"ROOM 1: EL PATIO",
+	msg: "A nivel narrativo, esta habitación permite establecer el peligro que representa la mansión y transmitir que el lugar todavía está habitado por criaturas."
+},
+{
+	name: "ROOM 1: EL PATIO",
+	msg: "Experiencia que se busca generar: presentar el peligro, introducir las mecánicas de combate y generar una primera sensación de tensión y misterio."
 }
 ]
 
 valen_dialog1 = [
 {
-	name: "Valen",
-	msg: "Al ingresar al castillo las puertas se cierran detrás del jugador."
+	name: "ROOM 2: LA BIBLIOTECA",
+	msg: "Decisiones de diseño:"
 },
 {
-	name: "Valen",
-	msg: "..."
+	name: "ROOM 2: LA BIBLIOTECA",
+	msg: "Esta habitación propone un cambio respecto a la anterior, pasando del combate a un desafío de investigación y resolución de puzzles. El jugador encuentra una biblioteca con libros y documentos relacionados con la historia de la familia Valerian."
 },
 {
-	name: "Valen",
-	msg: "En realidad estan cerradas, debe ser alguna clase de ilusion vampirica."
+	name: "ROOM 2: LA BIBLIOTECA",
+	msg: "El desafío consiste en encontrar cuatro documentos que cuentan diferentes acontecimientos de la familia: su origen, la transformación de Valerian, la rebelión de los habitantes y el ritual que lo encerró en un estado no físico."
+},
+{
+	name: "ROOM 2: LA BIBLIOTECA",
+	msg: "Para resolver el puzzle, el jugador debe encontrar unos documentos que debe deducir el su orden cronológico. Luego deberá colocarlos correctamente en los cuatro espacios de un escritorio antiguo."
+},
+{
+	name: "ROOM 2: LA BIBLIOTECA",
+	msg: "A nivel narrativo, esta habitación permite profundizar en la historia del castillo y revelar información importante sobre el pasado de Valerian. Al resolver el mecanismo, el jugador obtiene una reliquia familiar: un arma capaz de matar vampiros. Además, encuentra una página que explica qué sucedió durante la rebelión y cómo fue encerrado el conde."
+},
+{
+	name: "ROOM 2: LA BIBLIOTECA",
+	msg: "Experiencia que se busca generar: ofrecer variedad en el gameplay, incentivar la exploración y la interpretación de pistas, y generar curiosidad por descubrir la historia de la familia Valerian."
 },
 ]
 valen_dialog2 = [
@@ -159,76 +183,92 @@ valen_dialog3 = [
 
 maxi_dialog2 = [
 {
-	name: "Maxi",
-	msg: "El jugador ingresa en un comedor donde parece que una celebración acaba de terminar."
+	name: "ROOM 3: EL BANQUETE",
+	msg: "Decisiones de diseño:"
 },
 {
-	name: "Maxi",
-	msg: "Hay platos servidos y copas sobre la mesa."
+	name: "ROOM 3: EL BANQUETE",
+	msg: "Esta habitación introduce una complicación en la historia. El jugador ingresa en un comedor donde parece que una celebración acaba de terminar, con platos servidos y copas sobre la mesa. Sin embargo, aparecen vampiros que aparentan ser antiguos invitados y atacan al protagonista."
 },
 {
-	name: "Maxi",
-	msg: "De repente, aparecen vampiros que aparentan ser antiguos invitados que atacaran a el jugador."
+	name: "ROOM 3: EL BANQUETE",
+	msg: "Desde el punto de vista del gameplay, se retoman las mecánicas de combate presentadas en la primera habitación: golpear y esquivar, agregando una nueva mecánica de disparo conseguida en el anterior Room. Esto permite recuperar el ritmo de acción después del desafío de investigación de la biblioteca."
 },
 {
-	name: "Maxi",
-	msg: "Luego de derrotarlos, nuestro protagonista descubre que el ritual se encuentra roto, ya que una persona rompió ese ritual. Hace algunos años, unos historiadores revisaron el castillo y se llevaron algunos objetos, siendo uno de estos un cáliz el cual pertenece al ritual y sin el este se rompió. Por lo que el conde fue liberado y todavía se encuentra en el castillo."
+	name: "ROOM 3: EL BANQUETE",
+	msg: "A nivel narrativo, luego de derrotar a los vampiros, el protagonista descubre que el ritual que mantenía encerrado a Valerian fue roto. Hace algunos años, unos historiadores visitaron el castillo y se llevaron diferentes objetos, entre ellos un cáliz que formaba parte del ritual. Al perder ese objeto, el ritual se rompió y el conde fue liberado."
 },
 {
-	name: "Maxi",
-	msg: "Mecánica: Disparar, golpear, esquivar"
+	name: "ROOM 3: EL BANQUETE",
+	msg: "Este descubrimiento modifica la situación inicial, ya que el protagonista comprende que Valerian no solamente sigue existiendo, sino que también fue liberado y todavía se encuentra dentro de la mansión."
 },
 {
-	name: "Fer",
-	msg: "Holaaaa, soy Fer, yo soy el que llego tarde metiendo estos dialogos. Probablemente te estes preguntando cual es el boton de disparar."
-},
-{
-	name: "Fer",
-	msg: "No llegue a agregarlo."
-},
-{
-	name: "Fer",
-	msg: "xd"
+	name:"ROOM 3: EL BANQUETE",
+	msg: "Experiencia que se busca generar: sorprender al jugador mediante un cambio en la historia, aumentar la tensión y generar preocupación por la presencia de Valerian en el castillo."
 },
 ]
 maxi_dialog3 = [
 {
-	name: "Maxi",
-	msg: "Luego del banquete, el protagonista sigue a algunos vampiros hacia el sótano del castillo, ve cómo ingresan por una puerta hacia una habitación y esta se cierra detrás de ellos. El jugador deberá resolver un puzzle de presionar plataformas en orden para poder entrar. Al entrar se encuentra con una cripta."
+	name: "ROOM 4: LA CRIPTA",
+	msg: "Decisiones de diseño:"
 },
 {
-	name: "Maxi",
-	msg: "Allí, Valerian despierta al sentir que alguien ha llegado hasta su refugio."
+	name: "ROOM 4: LA CRIPTA",
+	msg: "Esta habitación representa el momento de mayor intensidad del nivel, ya que el protagonista finalmente llega hasta donde está Valerian."
 },
 {
-	name: "Maxi",
-	msg: "El protagonista deberá enfrentarse a Valerian para evitar que recupere todo su poder."
+	name: "ROOM 4: LA CRIPTA",
+	msg: "Antes de ingresar a la cripta, se encuentra con un puzzle para poder continuar, deberá resolver un puzzle de plataformas que consiste en presionar cuatro símbolos en el orden correcto: Sol, Luna, Murciélago y Calavera."
 },
 {
-	name: "Maxi",
-	msg: "Mecánica: Disparar, golpear, esquivar, puzzle"
+	name: "ROOM 4: LA CRIPTA",
+	msg: "La pista para resolverlo es una frase relacionada con la llegada de la noche y las criaturas de la oscuridad."
+},
+{
+	name: "ROOM 4: LA CRIPTA",
+	msg: "Una vez resuelto el puzzle, el protagonista consigue ingresar a la cripta y Valerian despierta al sentir su presencia. Allí comienza el enfrentamiento principal del nivel."
+},
+{
+	name: "ROOM 4: LA CRIPTA",
+	msg: "Desde el punto de vista del gameplay, esta habitación combina las mecánicas de disparar, golpear y esquivar con la resolución de un puzzle. De esta manera, se busca poner a prueba las habilidades que el jugador utilizó durante las habitaciones anteriores."
+},
+{
+	name: "ROOM 4: LA CRIPTA",
+	msg: "Experiencia que se busca generar: alcanzar el punto de mayor tensión del nivel, generar expectativa por el encuentro con Valerian y ofrecer un desafío que combine las mecánicas desarrolladas anteriormente."
 },
 ]
 valen_dialog4 = [
 {
-	name: "Valen",
-	msg: "puzzle: “Cuando el sol desaparezca, la noche despertará. La luna guiará a las criaturas de la oscuridad, y la muerta reclamará su lugar.”"
+	name: "ROOM 4: LA CRIPTA",
+	msg: "Decisiones de diseño:"
 },
 {
-	name: "Valen",
-	msg: "símbolos a apretar y su orden: Sol. Luna. Murciélago. Calavera."
+	name: "ROOM 4: LA CRIPTA",
+	msg: "Esta habitación representa el momento de mayor intensidad del nivel, ya que el protagonista finalmente llega hasta donde está Valerian."
 },
 {
-	name: "Valen",
-	msg: "cada vez que el jugador toca la plataforma correcta queda iluminada"
+	name: "ROOM 4: LA CRIPTA",
+	msg: "Antes de ingresar a la cripta, se encuentra con un puzzle para poder continuar, deberá resolver un puzzle de plataformas que consiste en presionar cuatro símbolos en el orden correcto: Sol, Luna, Murciélago y Calavera."
+},
+{
+	name: "ROOM 4: LA CRIPTA",
+	msg: "La pista para resolverlo es una frase relacionada con la llegada de la noche y las criaturas de la oscuridad."
+},
+{
+	name: "ROOM 4: LA CRIPTA",
+	msg: "Una vez resuelto el puzzle, el protagonista consigue ingresar a la cripta y Valerian despierta al sentir su presencia. Allí comienza el enfrentamiento principal del nivel."
+},
+{
+	name: "ROOM 4: LA CRIPTA",
+	msg: "Desde el punto de vista del gameplay, esta habitación combina las mecánicas de disparar, golpear y esquivar con la resolución de un puzzle. De esta manera, se busca poner a prueba las habilidades que el jugador utilizó durante las habitaciones anteriores."
+},
+{
+	name: "ROOM 4: LA CRIPTA",
+	msg: "Experiencia que se busca generar: alcanzar el punto de mayor tensión del nivel, generar expectativa por el encuentro con Valerian y ofrecer un desafío que combine las mecánicas desarrolladas anteriormente."
 },
 ]
 
 fer_dialogFinal = [
-{
-	name: "Fer",
-	msg: "Tras derrotar a Valerian, el jugador descubre una cámara secreta. Alli encontrara antiguos tesoros y objetos usados para rituales. Sin embargo, al examinar la habitación, se revela que Valerian no era el único vampiro de su linaje. Alguien mas consiguió escapar hace siglos durante la rebelión."
-},
 {
 	name: "Fer",
 	msg: "FELICIDADES TERMINASTE EL JUEGO."
@@ -244,5 +284,32 @@ maxi_dialogFinal = [
 {
 	name: "Maxi",
 	msg: "Felicidades!!!!!!!!!!!!!!!"
+},
+]
+
+room_5 = [
+{
+	name: "ROOM 5: el secreto",
+	msg: "Decisiones de diseño:"
+},
+{
+	name: "ROOM 5: el secreto",
+	msg: "Esta última habitación funciona como cierre de la experiencia y recompensa narrativa por haber derrotado a Valerian."
+},
+{
+	name: "ROOM 5: el secreto",
+	msg: "Después del enfrentamiento, el jugador descubre una cámara secreta que contiene antiguos tesoros y objetos utilizados para realizar rituales."
+},
+{
+	name: "ROOM 5: el secreto",
+	msg: "Sin embargo, la habitación también introduce una revelación que modifica la comprensión que el jugador tiene sobre la historia de la familia: Valerian no era el único vampiro de su linaje, ya que alguien más consiguió escapar durante la rebelión ocurrida siglos atrás."
+},
+{
+	name: "ROOM 5: el secreto",
+	msg: "Desde el punto de vista narrativo, esta revelación permite cerrar el conflicto principal del nivel, pero deja planteada la posibilidad de que todavía existan otros integrantes de la familia Valerian."
+},
+{
+	name: "ROOM 5: el secreto",
+	msg: "Experiencia que se busca generar: proporcionar una recompensa por superar el desafío principal, cerrar el enfrentamiento con Valerian y generar intriga mediante una revelación que deja abierta la historia."
 },
 ]
