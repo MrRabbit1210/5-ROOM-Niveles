@@ -53,6 +53,7 @@
     {"id":{"name":"obj_enemy2","path":"objects/obj_enemy2/obj_enemy2.yy",},},
     {"id":{"name":"obj_escritorio_puzzle","path":"objects/obj_escritorio_puzzle/obj_escritorio_puzzle.yy",},},
     {"id":{"name":"obj_interfaz_documentos","path":"objects/obj_interfaz_documentos/obj_interfaz_documentos.yy",},},
+    {"id":{"name":"obj_intro","path":"objects/obj_intro/obj_intro.yy",},},
     {"id":{"name":"obj_mensaje_bibloteca","path":"objects/obj_mensaje_bibloteca/obj_mensaje_bibloteca.yy",},},
     {"id":{"name":"obj_mensaje_inicio","path":"objects/obj_mensaje_inicio/obj_mensaje_inicio.yy",},},
     {"id":{"name":"obj_mensaje_puzzle","path":"objects/obj_mensaje_puzzle/obj_mensaje_puzzle.yy",},},
@@ -71,6 +72,7 @@
     {"id":{"name":"obj_progresion","path":"objects/obj_progresion/obj_progresion.yy",},},
     {"id":{"name":"obj_puerta","path":"objects/obj_puerta/obj_puerta.yy",},},
     {"id":{"name":"obj_valerian","path":"objects/obj_valerian/obj_valerian.yy",},},
+    {"id":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Dialogue","path":"scripts/Dialogue/Dialogue.yy",},},
     {"id":{"name":"spr_arma","path":"sprites/spr_arma/spr_arma.yy",},},
@@ -145,6 +147,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",
